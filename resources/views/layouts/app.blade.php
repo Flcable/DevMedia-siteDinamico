@@ -13,30 +13,16 @@
 </head>
 <body>
     <div id="app-layout">
-    <nav>
-        <div class="nav-wrapper blue">
-            <div class="container">
-                <a href="#!" class="brand-logo">Logo
-
-                </a>
-                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i>
-
-                    </a>
-                        
-                            <ul class="right hide-on-med-and-down">
-                                <li><a href="#">Home</a></li>
-                                
-                            </ul>
-                            <ul class="side-nav" id="mobile-demo">
-                                  <li><a href="#">Home</a></li>
-                               
-                            </ul>
-            </div>
-        </div>
-</nav>
+    
+      <header>
+           @include('layouts._site._nav')
+      </header>
           
-
-        @yield('content')
+      <main>
+         @yield('content')
+      </main>
+      
+       
     </div>
 
     <!-- Scripts -->

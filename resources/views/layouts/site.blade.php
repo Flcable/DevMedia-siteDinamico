@@ -11,14 +11,17 @@
     <title>Laravel</title>
 
 </head>
-<body>
-    <div id="app-layout">
+<body id="app-layout">
+     
     <header>
       @include('layouts._site._nav')
     </header>
           
+          <main>
+             @yield('content')
+          </main>
 
-        @yield('content')
+       
 
         <footer class="page-footer blue">
           <div class="container">
@@ -30,9 +33,9 @@
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Links</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">sobre</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Contato</a></li>
+                  <li><a class="grey-text text-lighten-3" href="{{ route('site.home')}}">Home</a></li>
+                  <li><a class="grey-text text-lighten-3" href="{{ route('site.sobre')}}">sobre</a></li>
+                  <li><a class="grey-text text-lighten-3" href="{{ route('site.contato')}}">Contato</a></li>
               
                 </ul>
               </div>
@@ -45,7 +48,7 @@
             </div>
           </div>
         </footer>
-    </div>
+    
 
     <!-- Scripts -->
      <script src="{{asset('lib/jquery/dist/jquery.js')}}"></script>

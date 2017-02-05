@@ -11,9 +11,21 @@
 |
 */
 
-Route::get('/', function () {
-    return view('site.home');
-});
+
+
+Route::get('/',['as'=>'site.home', function(){
+	return view('site.home');
+}]);
+
+Route::get('/sobre',['as'=>'site.sobre', function(){
+	return view('site.sobre');
+}]);
+
+
+
+Route::get('/contato',['as'=>'site.contato', function(){
+	return view('site.contato');
+}]);
 
 Auth::routes();
 
