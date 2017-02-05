@@ -27,6 +27,16 @@ Route::get('/contato',['as'=>'site.contato', function(){
 	return view('site.contato');
 }]);
 
+Route::get('/imovel/{id}/{titulo?}',['as'=>'site.imovel', function(){
+	return view('site.imovel');
+}]);
+
+
+
+
+
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');

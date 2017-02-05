@@ -29,7 +29,7 @@
 					<label>Mensagem:</label>
 				</div>
 
-				<button class="btn blue">Enviar</button>
+				<button class="btn blue">Enviar </button>
 				
 			</form>
 			
